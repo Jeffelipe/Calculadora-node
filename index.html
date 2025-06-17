@@ -1,0 +1,59 @@
+<!-- <input id="display" />
+<button onclick="calcular()">Calcular</button>
+<p id="resultado"></p>
+
+<script src="index.js"></script>
+<script>
+    function calcular() {
+        const input = document.getElementById('display').value;
+        const resultado = calcularExpressao(input);
+        document.getElementById('resultado').textContent = `Resultado: ${resultado}`;
+    }
+</script> -->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Calculadora JS com Botões</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora JS</h1>
+    <input type="text" id="display" placeholder="Digite ou use os botões" readonly />
+
+    <div class="botoes">
+      <!-- Números -->
+      <button onclick="inserir('0')">0</button>
+      <button onclick="inserir('1')">1</button>
+      <button onclick="inserir('2')">2</button>
+      <button onclick="inserir('3')">3</button>
+      <button onclick="inserir('4')">4</button>
+      <button onclick="inserir('5')">5</button>
+      <button onclick="inserir('6')">6</button>
+      <button onclick="inserir('7')">7</button>
+      <button onclick="inserir('8')">8</button>
+      <button onclick="inserir('9')">9</button>
+      <button onclick="inserir('.')">.</button>
+
+      <!-- Operadores -->
+      <button onclick="inserir('+')">+</button>
+      <button onclick="inserir('-')">-</button>
+      <button onclick="inserir('*')">*</button>
+      <button onclick="inserir('/')">/</button>
+      <button onclick="inserir('^')">^</button>
+      <button onclick="inserir('media')">media</button>
+
+      <!-- Controle -->
+      <button onclick="limpar()">C</button>
+      <button onclick="calcular()">=</button>
+    </div>
+
+    <p id="resultado"></p>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
